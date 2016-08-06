@@ -1,0 +1,28 @@
+ext {
+    commonDependencies = [
+            cglib               : dependencies.create("cglib:cglib-nodep:3.2.4"),
+            groovy              : dependencies.create("org.codehaus.groovy:groovy-all:2.4.7"),
+            junit               : dependencies.create("junit:junit:4.12"),
+            spock               : dependencies.create("org.spockframework:spock-core:1.0-groovy-2.4", {
+                exclude module: "groovy-all"
+                exclude module: "junit"
+            }),
+            gson                : dependencies.create("com.google.code.gson:gson:2.7"),
+            commons_lang        : dependencies.create("org.apache.commons:commons-lang3:3.4"),
+            commons_collections4: dependencies.create("org.apache.commons:commons-collections4:4.1"),
+            commons_io          : dependencies.create("commons-io:commons-io:2.5"),
+            lombok              : dependencies.create("org.projectlombok:lombok:1.16.10"),
+            objenesis           : dependencies.create("org.objenesis:objenesis:2.4"),
+            betamax             : dependencies.create("software.betamax:betamax-junit:2.0.1"),
+            jaxb                : dependencies.create("org.glassfish.jaxb:jaxb-runtime:2.2.11"),
+            jackson             : dependencies.create("com.fasterxml.jackson.core:jackson-databind:2.8.1"),
+            mockito             : dependencies.create("org.mockito:mockito-all:1.10.19"),
+            power_mock          : dependencies.create("org.powermock:powermock-api-mockito:1.6.5"),
+            power_mock_junit    : dependencies.create("org.powermock:powermock-module-junit4:1.6.5")
+    ]
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
