@@ -15,10 +15,11 @@ ext {
             objenesis           : dependencies.create("org.objenesis:objenesis:2.4"),
             betamax             : dependencies.create("software.betamax:betamax-junit:2.0.1"),
             jaxb                : dependencies.create("org.glassfish.jaxb:jaxb-runtime:2.2.11"),
-            jackson             : dependencies.create("com.fasterxml.jackson.core:jackson-databind:2.8.1"),
+            jackson             : dependencies.create("com.fasterxml.jackson.core:jackson-databind:2.8.3"),
             mockito             : dependencies.create("org.mockito:mockito-all:1.10.19"),
             power_mock          : dependencies.create("org.powermock:powermock-api-mockito:1.6.5"),
-            power_mock_junit    : dependencies.create("org.powermock:powermock-module-junit4:1.6.5")
+            power_mock_junit    : dependencies.create("org.powermock:powermock-module-junit4:1.6.5"),
+            system_rules_junit  : dependencies.create("com.github.stefanbirkner:system-rules:1.16.1")
     ]
 }
 
