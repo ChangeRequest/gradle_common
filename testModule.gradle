@@ -7,8 +7,6 @@ dependencies {
     testCompile commonDependencies.junit
     testCompile commonDependencies.cglib
     testCompile commonDependencies.objenesis
-    testCompile commonDependencies.betamax
-    testCompile commonDependencies.system_rules_junit
 }
 
 tasks.withType(GroovyCompile) {

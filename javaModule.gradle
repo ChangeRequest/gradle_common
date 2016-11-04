@@ -5,8 +5,8 @@ tasks.withType(JavaCompile.class) {
     options.warnings = false
     options.encoding = "UTF-8"
     options.compilerArgs = ["-Xmaxerrs", "20", "-Xmaxwarns", "0", "-Xlint:all"]
-    sourceCompatibility = JavaVersion.VERSION_1_7
-    targetCompatibility = JavaVersion.VERSION_1_7
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
 }
 
 //create a single Jar with all dependencies

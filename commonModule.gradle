@@ -7,19 +7,18 @@ ext {
                 exclude module: "groovy-all"
                 exclude module: "junit"
             }),
-            gson                : dependencies.create("com.google.code.gson:gson:2.7"),
-            commons_lang        : dependencies.create("org.apache.commons:commons-lang3:3.4"),
+            gson                : dependencies.create("com.google.code.gson:gson:2.8.0"),
+            commons_lang        : dependencies.create("org.apache.commons:commons-lang3:3.5"),
             commons_collections4: dependencies.create("org.apache.commons:commons-collections4:4.1"),
             commons_io          : dependencies.create("commons-io:commons-io:2.5"),
             lombok              : dependencies.create("org.projectlombok:lombok:1.16.10"),
             objenesis           : dependencies.create("org.objenesis:objenesis:2.4"),
             betamax             : dependencies.create("software.betamax:betamax-junit:2.0.1"),
             jaxb                : dependencies.create("org.glassfish.jaxb:jaxb-runtime:2.2.11"),
-            jackson             : dependencies.create("com.fasterxml.jackson.core:jackson-databind:2.8.3"),
-            mockito             : dependencies.create("org.mockito:mockito-all:1.10.19"),
-            power_mock          : dependencies.create("org.powermock:powermock-api-mockito:1.6.5"),
-            power_mock_junit    : dependencies.create("org.powermock:powermock-module-junit4:1.6.5"),
-            system_rules_junit  : dependencies.create("com.github.stefanbirkner:system-rules:1.16.1")
+            jackson             : dependencies.create("com.fasterxml.jackson.core:jackson-databind:2.8.4"),
+            mockito             : dependencies.create("org.mockito:mockito-core:2.2.9"),
+            guava               : dependencies.create("com.google.guava:guava:20.0"),
+            guava_testlib       : dependencies.create("com.google.guava:guava-testlib:20.0")
     ]
 }
 
