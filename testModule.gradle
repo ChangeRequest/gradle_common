@@ -18,9 +18,13 @@ jacoco {
 }
 
 test {
-    testLogging.showStandardStreams = true
     testLogging {
         events "PASSED", "FAILED", "SKIPPED"
+        exceptionFormat "full"
+        showStandardStreams true
+        showStackTraces true
+        showExceptions true
+        showCauses true
     }
     jacoco {
         append = false
