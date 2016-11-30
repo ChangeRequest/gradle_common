@@ -15,8 +15,8 @@ ext {
             objenesis           : dependencies.create("org.objenesis:objenesis:2.4"),
             betamax             : dependencies.create("software.betamax:betamax-junit:2.0.1"),
             jaxb                : dependencies.create("org.glassfish.jaxb:jaxb-runtime:2.2.11"),
-            jackson             : dependencies.create("com.fasterxml.jackson.core:jackson-databind:2.8.4"),
-            mockito             : dependencies.create("org.mockito:mockito-core:2.2.11"),
+            jackson             : dependencies.create("com.fasterxml.jackson.core:jackson-databind:2.8.5"),
+            mockito             : dependencies.create("org.mockito:mockito-core:2.2.26"),
             guava               : dependencies.create("com.google.guava:guava:20.0"),
             guava_testlib       : dependencies.create("com.google.guava:guava-testlib:20.0"),
             system_rules_junit  : dependencies.create("com.github.stefanbirkner:system-rules:1.16.1")
@@ -29,5 +29,5 @@ repositories {
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '3.2'
+    gradleVersion = '3.2.1'
 }
