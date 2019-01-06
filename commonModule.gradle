@@ -1,25 +1,25 @@
 ext {
     commonDependencies = [
-            cglib               : dependencies.create("cglib:cglib-nodep:3.2.4"),
-            groovy              : dependencies.create("org.codehaus.groovy:groovy-all:2.4.7"),
+            cglib               : dependencies.create("cglib:cglib-nodep:3.2.10"),
+            groovy              : dependencies.create("org.codehaus.groovy:groovy-all:2.5.5"),
             junit               : dependencies.create("junit:junit:4.12"),
-            spock               : dependencies.create("org.spockframework:spock-core:1.0-groovy-2.4", {
+            spock               : dependencies.create("org.spockframework:spock-core:1.2-groovy-2.5", {
                 exclude module: "groovy-all"
                 exclude module: "junit"
             }),
-            gson                : dependencies.create("com.google.code.gson:gson:2.8.0"),
-            commons_lang        : dependencies.create("org.apache.commons:commons-lang3:3.5"),
-            commons_collections4: dependencies.create("org.apache.commons:commons-collections4:4.1"),
-            commons_io          : dependencies.create("commons-io:commons-io:2.5"),
-            lombok              : dependencies.create("org.projectlombok:lombok:1.16.10"),
-            objenesis           : dependencies.create("org.objenesis:objenesis:2.4"),
+            gson                : dependencies.create("com.google.code.gson:gson:2.8.5"),
+            commons_lang        : dependencies.create("org.apache.commons:commons-lang3:3.8.1"),
+            commons_collections4: dependencies.create("org.apache.commons:commons-collections4:4.2"),
+            commons_io          : dependencies.create("commons-io:commons-io:2.6"),
+            lombok              : dependencies.create("org.projectlombok:lombok:1.18.4"),
+            objenesis           : dependencies.create("org.objenesis:objenesis:3.0.1"),
             betamax             : dependencies.create("software.betamax:betamax-junit:2.0.1"),
             jaxb                : dependencies.create("org.glassfish.jaxb:jaxb-runtime:2.2.11"),
-            jackson             : dependencies.create("com.fasterxml.jackson.core:jackson-databind:2.8.5"),
-            mockito             : dependencies.create("org.mockito:mockito-core:2.2.26"),
-            guava               : dependencies.create("com.google.guava:guava:20.0"),
-            guava_testlib       : dependencies.create("com.google.guava:guava-testlib:20.0"),
-            system_rules_junit  : dependencies.create("com.github.stefanbirkner:system-rules:1.16.1")
+            jackson             : dependencies.create("com.fasterxml.jackson.core:jackson-databind:2.9.8"),
+            mockito             : dependencies.create("org.mockito:mockito-core:2.23.4"),
+            guava               : dependencies.create("com.google.guava:guava:27.0.1-jre"),
+            guava_testlib       : dependencies.create("com.google.guava:guava-testlib:27.0.1-jre"),
+            system_rules_junit  : dependencies.create("com.github.stefanbirkner:system-rules:1.19.0")
     ]
 }
 
